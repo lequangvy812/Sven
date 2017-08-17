@@ -1,21 +1,27 @@
+*{
+  box-sizing: border-box;
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
 
+}
 body{
   font-family:Arial;
-  background:#EEEEEE;
-  width:500px;
+  background:#222222;
   height:auto;
+  margin: auto;
+  width:500px;
 }
 #check{
   height:28px;
   background-color:white;
-  border:1px solid #DDDDDD;
+  border:none;
   border-radius:5px;
   
 }
 #check:hover{
-  background-color:black;
+  background-color:#00BFFF;
   color:white;
-  border:1px solid black;
+  border:none;
 }
 #user{
   height:24px;
@@ -26,15 +32,9 @@ body{
 #group a{
   text-decoration:none;
   color:black;
-  position:relative;
-  top:12px;
-  left:125px;
-}
-#group{
-  position:relative;
-  top:10px;
-  left:20px;
-  
+  position: relative;
+  left: 140px;
+  top: 12px;
 }
 #group a:hover{
   color:black;
@@ -43,28 +43,87 @@ body{
   height:42px;
   background:#ddd;
   width:470px;
+  position: relative;
+  top: 10px;
+  left: 22px;
 }
 
 
 #all{
   text-align:center; 
 }
-#content{
-  text-align:center;
-}
 #ctn{
-  position: relative;
+  
   left: 150px;
   top: 80px;
 }
 #update{
   text-align: center;
-  position: relative;
   top: 5px;
-  color: gray;
+  color:#00BFFF;
+  opacity: 0.6;
 }
 #load{
   position: relative;
   left: 5px;
   top: 4px;
+}
+#content{
+  text-align: center;
+}
+#content:hover{
+ opacity: 1;
+}
+#music{
+  text-align: center;
+  position: relative;
+  top: 5px;
+}
+@media(min-width:992px) {
+            body {
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media (min-width: @screen-sm-min) {
+            .content {
+                max-width: 100%;
+                padding: 20px;
+            }
+            .banner-cover {
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width: @screen-md-min) {
+            .content {
+                max-width: 100%;
+                padding: 20px;
+            }
+            .banner-cover {
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width: @screen-lg-min) {
+            .content {
+                max-width: 100%;
+                padding: 50px;
+            }
+            .banner-cover {
+                max-width: 100%;
+            }
+        }
+a{
+  color: #00B2EE;
+  text-decoration: none;
+}
+#over{
+  background: black;
+}
+#text{
+  position: relative;
+  bottom:5px;
 }
